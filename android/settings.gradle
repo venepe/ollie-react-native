@@ -1,0 +1,15 @@
+rootProject.name = 'ollie'
+include ':react-native-fs'
+project(':react-native-fs').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-fs/android')
+include ':react-native-camera'
+project(':react-native-camera').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-camera/android')
+include ':react-native-network-info'
+project(':react-native-network-info').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-network-info/android')
+include ':react-native-wifi-manager'
+project(':react-native-wifi-manager').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-wifi-manager/android')
+include ':react-native-vector-icons'
+project(':react-native-vector-icons').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-vector-icons/android')
+include ':react-native-smartconfig'
+project(':react-native-smartconfig').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-smartconfig/android')
+
+include ':app'
